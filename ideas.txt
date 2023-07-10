@@ -1,0 +1,17 @@
+I'll have a video running in the background of my portfolio webpage. About what idk /shrug
+
+The whole design should be focussed on something about me that I like. (Easter eggs)
+Genre options so far would be Games | Anime | Sport
+
+
+Then we'll have About | Projects | (maybe a settings page)
+The whole thing should be setup with react and js
+
+I think I only do two pages but I'mma add an option so u can just swipe left and right
+
+
+Add a journey and a hit me up option
+Also maybe on the home page make something so the page doesen't scroll down the text just appears and disappears when u scroll
+
+I can do the header similar to this site:
+https://coryhughart.com/
