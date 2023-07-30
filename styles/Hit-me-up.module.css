@@ -1,0 +1,20 @@
+.Hit-me-up {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.Hit-me-up {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  
+  /* Apply different background colors to the two divs */
+  .Hit-me-up > div:nth-child(1) {
+    background-color: lightblue;
+  }
+  
+  .Hit-me-up > div:nth-child(2) {
+    background-color: lightgreen;
+  }
+  
+

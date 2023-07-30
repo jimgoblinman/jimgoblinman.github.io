@@ -19,3 +19,12 @@ https://coryhughart.com/
 
 
 Get the page more or less finished using modals and then try to add smooth scroll the the website to finish it. 
+
+
+Home
+About
+Journey
+Add a sliderview on the right side of the page and on the left I'll have a picture that will change according to where I'm located on my journey. (E.g a picture of my school building or smth.)
+Hit Me Up
+Projects
+

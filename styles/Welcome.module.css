@@ -1,0 +1,12 @@
+.WelcomeBox {
+    display: flex; /* Use Flexbox to align items */
+    flex-grow: 1;
+    align-items: center; /* Align items vertically in the center */
+    justify-content: center; /* Center the content horizontally */
+    height: 100%;   
+  }
+  
+  .WelcomeText {
+    font-size: 22px;
+  }
+  

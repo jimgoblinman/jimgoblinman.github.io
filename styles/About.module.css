@@ -1,0 +1,15 @@
+.about-box {
+    background-color: lightblue;
+    display: flex; /* Use Flexbox to align items */
+    align-items: center; /* Align items vertically in the center */
+    gap: 2%; /* Add some spacing between the image and the text */
+}
+
+.about-box img {
+    max-width: 40%;
+}
+
+ .about-box p {
+    margin-left: 5%;
+    width: 60%;
+}  
