@@ -1,0 +1,6 @@
+.Footer-header {
+    height: 15vh; 
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+
+}

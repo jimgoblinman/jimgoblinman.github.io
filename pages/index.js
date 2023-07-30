@@ -5,6 +5,7 @@ import About from '../components/About';
 import Home from '../components/Home';
 import Journey from '../components/Journey';
 import Hit_me_up from '../components/HitMeUp';
+import Footer from '../components/Footer';
 
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
 
         {/* Fourth Column */}
         <Hit_me_up></Hit_me_up>
+
+        {/* Fifth Column: Footer */}
+        <Footer></Footer>
     </div>
     
     </>

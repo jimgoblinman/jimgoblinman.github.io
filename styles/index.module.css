@@ -1,5 +1,5 @@
 .gridlayout-container {
     display: grid;
-    grid-template-rows: repeat(4, 100vh);
+    grid-template-rows: repeat(4, 100vh) 40vh;
 }
 

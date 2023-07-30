@@ -27,4 +27,10 @@ Journey
 Add a sliderview on the right side of the page and on the left I'll have a picture that will change according to where I'm located on my journey. (E.g a picture of my school building or smth.)
 Hit Me Up
 Projects
+Footer
+Add a display flex and add social links | contact | copyright
+social: Email, Phone
+contact: github, linkedin, 
+copyright: full rights reserved James Vining
 
+Maybe put longer texts into text files and just import them

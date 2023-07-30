@@ -1,20 +1,37 @@
 .Hit-me-up {
     display: grid;
     grid-template-columns: 50% 50%;
+  }
+  
+/* Apply different background colors to the two divs */
+.Hit-me-up > div:nth-child(1) {
+  background-color: lightblue;
 }
 
-.Hit-me-up {
-    display: grid;
-    grid-template-columns: 50% 50%;
-  }
-  
-  /* Apply different background colors to the two divs */
-  .Hit-me-up > div:nth-child(1) {
-    background-color: lightblue;
-  }
-  
-  .Hit-me-up > div:nth-child(2) {
-    background-color: lightgreen;
-  }
-  
+.Hit-me-up > div:nth-child(2) {
+  background-color: lightgreen;
+}
 
+.formContainer {
+  display: flex; /* Use Flexbox to create a vertical layout */
+  flex-direction: column; /* Stack form elements vertically */
+  justify-content: center; /* Center form elements vertically */
+  align-items: center; /* Center form elements horizontally */
+  height: 100%;
+}
+
+.formContainer input button {
+  margin-bottom: 2%;
+}
+
+.text-box {
+  display: flex; 
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.text-box p{
+  width: 80%;
+}
