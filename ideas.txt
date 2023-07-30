@@ -15,3 +15,7 @@ Also maybe on the home page make something so the page doesen't scroll down the 
 
 I can do the header similar to this site:
 https://coryhughart.com/
+
+
+
+Get the page more or less finished using modals and then try to add smooth scroll the the website to finish it. 

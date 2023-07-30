@@ -3,8 +3,9 @@
   margin: 0; 
   display: grid;
   background-color: #f2f2f2;
-  grid-template-columns: 10% 20% 30% auto auto auto auto 5%;
+  grid-template-columns: 10% 20% 20% auto auto auto auto 5%;
   align-items: start;
+
  
 }
 
@@ -40,4 +41,12 @@
 .roundImage {
   border-radius: 100%;
   overflow: hidden;
+  margin: 5%;
+  
 }
+
+.griditem a {
+  text-decoration: none;
+  color:inherit;
+}
+
