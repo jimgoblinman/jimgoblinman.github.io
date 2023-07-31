@@ -7,6 +7,7 @@ function Header() {
     <header className={styles.header}>
         
         <div className={styles.griditem}>
+          <div className={styles.imageContainer}>
               <Image
                 className={styles.roundImage}
                 src="/assets/placeholder.png"
@@ -14,7 +15,7 @@ function Header() {
                 width={36}
                 height={36}
               />
-           
+          </div>
         </div>
 
         <div className={`${styles.griditem} ${styles.myName}`}><h2>James Vining</h2></div>

@@ -12,9 +12,9 @@ function Footer() {
             </div>
             <div></div>
               <div className={styles['social-container']}> {/* For my socials, all in circular shape (linkdin/github/whatsapp) */}  
-                <a href='https://wa.me/41797280659'><img src="/assets/whatsapp.png"></img></a>
-                <a href='https://github.com/jimgoblinman'><img src="/assets/github.png"></img></a>
-                <a href='https://www.linkedin.com/in/jim-vin-421b42228/'><img src="/assets/linkedin.png"></img></a>
+                <a href='https://wa.me/41797280659' target="_blank"><img src="/assets/whatsapp.png"></img></a>
+                <a href='https://github.com/jimgoblinman' target="_blank"><img src="/assets/github.png"></img></a>
+                <a href='https://www.linkedin.com/in/jim-vin-421b42228/' target="_blank"><img src="/assets/linkedin.png"></img></a>
               </div>          
             </div>  
           <div className={styles['Footer-content']}>

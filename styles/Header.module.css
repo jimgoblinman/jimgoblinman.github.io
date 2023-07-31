@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: 10% 20% 20% auto auto auto auto 5%;
   align-items: start;
- 
+  height: 8%; 
 }
 
 .header h1 {
@@ -15,14 +15,17 @@
 .header h2{
   color: white;
   font-size: 16px;
+  margin: 0;
 }
 
 .griditem {
   font-family: "moby-monospace", monospace;
   font-weight: 400;
   font-style: normal;
-  display: flex; /* Add this line to enable flexbox layout */
+  display: flex;
   justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .griditem h1 {
@@ -45,15 +48,19 @@
   width: 100%;
 }
 
-.roundImage {
-  border-radius: 100%;
-  overflow: hidden;
-  margin: 5%;
-  
-}
-
 .griditem a {
   text-decoration: none;
   color:inherit;
+}
+
+.imageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.roundImage {
+  border-radius: 100%;
+  overflow: hidden;  
 }
 

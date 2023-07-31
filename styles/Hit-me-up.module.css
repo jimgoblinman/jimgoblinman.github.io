@@ -6,7 +6,7 @@
     border-color: #731010;
   }
   
-/* Apply different background colors to the two divs */
+/* Apply different background colors to the two divs *//*
 .Hit-me-up > div:nth-child(1) {
 
 }
@@ -14,17 +14,15 @@
 .Hit-me-up > div:nth-child(2) {
   
 }
-
+*/
 .formContainer {
   display: flex; /* Use Flexbox to create a vertical layout */
   flex-direction: column; /* Stack form elements vertically */
   justify-content: center; /* Center form elements vertically */
   align-items: center; /* Center form elements horizontally */
   height: 100%;
-}
-
-.formContainer input button {
-  margin-bottom: 2%;
+  margin-right: 5%;
+  margin-left: 5%;
 }
 
 .text-box {
@@ -41,4 +39,40 @@
 
 .Hit-me-up h2 {
   color: white;
+}
+
+/* Hit-me-up.module.css */
+.formContainer input, .formContainer textarea {
+  background-color: #1f1f1f; /* Dark background color */
+  color: #d4d4d4; /* Light text color */
+  border: 1px solid #707070; /* Border color */ /* Add some padding for better appearance */
+  width: 100%;
+  padding: 0;
+}
+
+.formContainer button {
+  background-color: #731010; /* Dark red background color for the button */
+  color: white; /* White text color for the button */
+  border: none; /* Remove the default button border */
+  padding: 10px 20px; /* Add padding for better appearance */
+  cursor: pointer; /* Show a pointer cursor on hover */
+}
+
+.formContainer button:hover {
+  background-color: #a80000; /* Lighter red background color on hover */
+}
+
+.name-email {
+  display: flex; 
+  margin-bottom: 3%;
+  width: 100%;
+  height:8%;
+}
+
+.formContainer textarea {
+  height: 15%;
+}
+
+.name-email > input:nth-child(1) {
+  margin-right: 3%;
 }

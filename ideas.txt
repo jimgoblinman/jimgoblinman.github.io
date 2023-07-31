@@ -40,3 +40,8 @@ Maybe put longer texts into text files and just import them
 #1f1f1f
 #731010
 #a80000
+
+Journey still needs to be designed
+General changes for the texts since it's all kinda piled up rn. 
+Backend for the email
+Get the github page running on github pages

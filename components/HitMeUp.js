@@ -1,8 +1,28 @@
 import React from 'react';
 import styles from '../styles/Hit-me-up.module.css';
-
+import { useState } from 'react';
 
 function Hit_me_up() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: '',
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('Form Data:', formData);
+    // You can perform further actions with the form data here, such as sending it to a server.
+  };
   return (
     <>
       <div id='hit_me_up' className={styles['Hit-me-up']}>
@@ -16,11 +36,17 @@ Anyway, jokes aside, I'm not just your regular developer; I take pride in being 
         </div>
         </div>
         <div> {/* In here will be the form used*/}
-          <form method='post' className={styles.formContainer}>
-              <input type="text" name="name" value="John Doe"></input><br></br>
-              <input type="email" name="email" value="john.doe@gmail.com"></input><br></br>
-              <input type="text" name="subject" value="Subject"></input><br></br>
-              <input type="text" name="message" value="Message"></input><br></br>
+          <form method='post' className={styles.formContainer} onSubmit={handleSubmit}>
+              <div className={styles['name-email']}>
+              <input type="text" name="name" value={formData.name} placeholder='Name' onChange={handleChange} /><br />
+              <input type="email" name="email" value={formData.email} placeholder='Email' onChange={handleChange} /><br />
+              </div>
+                <textarea
+                  name="message"
+                  value={formData.message}
+                  placeholder='Message'
+                  onChange={handleChange}/>
+                <br />
               <button type='submit'>Hit me up!</button>
           </form>
         </div>
