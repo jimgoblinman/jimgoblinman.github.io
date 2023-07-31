@@ -34,3 +34,9 @@ contact: github, linkedin,
 copyright: full rights reserved James Vining
 
 Maybe put longer texts into text files and just import them
+
+#d4d4d4
+#707070
+#1f1f1f
+#731010
+#a80000

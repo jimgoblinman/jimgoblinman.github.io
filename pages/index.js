@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from '../styles/index.module.css'
+import colors from '../theme/theme';
 
 import About from '../components/About';
 import Home from '../components/Home';
@@ -13,6 +14,14 @@ function App() {
       <style jsx global>{`
         body {
           margin: 0;
+          background-color: ${colors.background};
+        }
+        a {
+          color: ${colors.hyperlinks};
+        }
+        
+        a:hover {
+          color: ${colors.buttons};
         }
       `}</style>
 

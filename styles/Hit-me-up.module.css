@@ -1,15 +1,18 @@
 .Hit-me-up {
     display: grid;
     grid-template-columns: 50% 50%;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-color: #731010;
   }
   
 /* Apply different background colors to the two divs */
 .Hit-me-up > div:nth-child(1) {
-  background-color: lightblue;
+
 }
 
 .Hit-me-up > div:nth-child(2) {
-  background-color: lightgreen;
+  
 }
 
 .formContainer {
@@ -32,6 +35,10 @@
   height: 100%;
 }
 
-.text-box p{
+.text-box div{
   width: 80%;
+}
+
+.Hit-me-up h2 {
+  color: white;
 }

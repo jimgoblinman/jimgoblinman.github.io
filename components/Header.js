@@ -17,14 +17,14 @@ function Header() {
            
         </div>
 
-        <div className={styles.griditem}><p>James Vining</p></div>
+        <div className={`${styles.griditem} ${styles.myName}`}><h2>James Vining</h2></div>
         
        <div className={styles.griditem}></div>
-      
-            <div className={styles.griditem}><p><a href="#about">About</a></p></div>
-            <div className={styles.griditem}><p><a href="#journey">Journey</a></p></div>
-            <div className={styles.griditem}><p><a href="#hit_me_up">Hit me up</a></p></div>
-            <div className={styles.griditem}><p><a href="#projects">Projects</a></p></div>
+            
+            <div className={styles.griditem}><h1><a href="#about">About</a></h1></div>
+            <div className={styles.griditem}><h1><a href="#journey">Journey</a></h1></div>
+            <div className={styles.griditem}><h1><a href="#hit_me_up">Hit me up</a></h1></div>
+            <div className={styles.griditem}><h1><a href="#projects">Projects</a></h1></div>
             <div className={styles.griditem}></div>
                
     </header>
