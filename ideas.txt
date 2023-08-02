@@ -45,3 +45,9 @@ Journey still needs to be designed
 General changes for the texts since it's all kinda piled up rn. 
 Backend for the email
 Get the github page running on github pages
+
+
+Hit me up functionality: // Should take bout 10 hours at best to solve
+2 Security Problems
+Api key can be seen and taken if the project is public --> Email JS SDK ()
+Emails and messages can be read by anyone --> crypto.js
