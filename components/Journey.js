@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/journey.module.css';
+import styles from '../styles/Journey.module.css';
 
 
 function Journey() {
