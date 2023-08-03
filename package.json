@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
-    "email-dev": "email dev"
+    "build": "next build",
+    "email-dev": "email dev",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "James Vining",
   "license": "ISC",
@@ -23,6 +26,8 @@
     "@babel/preset-react": "^7.22.5",
     "@types/react": "18.2.18",
     "babel-plugin-module-resolver": "^5.0.0",
+    "gh-pages": "^5.0.0",
     "typescript": "^5.1.6"
-  }
+  },
+  "homepage": "https://jimgoblinman.github.io"
 }

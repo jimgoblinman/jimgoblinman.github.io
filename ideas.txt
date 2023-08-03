@@ -48,6 +48,8 @@ Get the github page running on github pages
 
 
 Hit me up functionality: // Should take bout 10 hours at best to solve
-2 Security Problems
-Api key can be seen and taken if the project is public --> Email JS SDK ()
+3 Security Problems
+Api key can be seen and taken if the project is public --> Email JS SDK () --> solved
 Emails and messages can be read by anyone --> crypto.js
+Environment variables need to be stored safely on github using github secrets. --> first I'mma publish the website though with github pages and make sure that works:)
+Add an interval to reduce spammage
