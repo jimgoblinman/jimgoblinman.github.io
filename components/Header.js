@@ -10,7 +10,7 @@ function Header() {
           <div className={styles.imageContainer}>
               <Image
                 className={styles.roundImage}
-                src="assets/placeholder.png"
+                src="/assets/placeholder.png"
                 alt="Description of the image"
                 width={36}
                 height={36}

@@ -4,13 +4,14 @@ import styles from '../styles/Hit-me-up.module.css';
 import { useState } from 'react';
 
 // Initialize EmailJS SDK with the user_id
-const EMAIL_JS_USER_ID = process.env.REACT_APP_EMAILJS_USER_ID;
+const EMAIL_JS_USER_ID = process.env.NEXT_PUBLIC_EMAILJS_USER_ID;
 emailjs.init(EMAIL_JS_USER_ID);
 
 function Hit_me_up() {
-  const SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
-  const TEMPLATE_ID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
-
+  const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+  const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+  
+  const EMAIL_JS_USER_ID = process.env.NEXT_PUBLIC_EMAILJS_USER_ID;
   const [formData, setFormData] = useState({
     user_name: '',
     user_email: '',
@@ -32,8 +33,14 @@ function Hit_me_up() {
     
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current)
       .then((result) => {
+        
           console.log(result.text);
+          const EMAIL_JS_USER_ID = process.env.REACT_APP_EMAILJS_USER_ID;          
+
       }, (error) => {
+
+        const EMAIL_JS_USER_ID = process.env.REACT_APP_EMAILJS_USER_ID;
+
           console.log(error.text);
       });
   };

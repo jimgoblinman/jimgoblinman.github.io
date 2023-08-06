@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from '../styles/index.module.css'
 import colors from '../theme/theme';
+require('dotenv').config();
+
 
 import About from '../components/About';
 import Home from '../components/Home';
