@@ -17,7 +17,7 @@ function Hit_me_up() {
     message: '',
   });
 
-  const [lastSentTimestamp, setLastSentTimestamp] = useState(null); // Track last sent timestamp
+ // const [lastSentTimestamp, setLastSentTimestamp] = useState(null); // Track last sent timestamp
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -34,7 +34,7 @@ function Hit_me_up() {
 
     // Check if enough time has passed since the last email was sent
     const currentTime = Date.now();
-    if (lastSentTimestamp && currentTime - lastSentTimestamp < 5 * 60 * 1000) {
+    if (localStorage.getItem('lastSentTimestamp') && currentTime - parseInt(localStorage.getItem('lastSentTimestamp')) < 5 * 60 * 1000) {
       console.log('Too soon to send another email.');
       return;
     }
@@ -42,7 +42,8 @@ function Hit_me_up() {
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current).then(
       (result) => {
         console.log(result.text);
-        setLastSentTimestamp(currentTime); // Update last sent timestamp
+        //setLastSentTimestamp(currentTime); // Update last sent timestamp
+        localStorage.setItem('lastSentTimeStamp', Date.now().toString());
       },
       (error) => {
         console.log(error.text);
