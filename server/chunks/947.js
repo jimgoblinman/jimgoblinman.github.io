@@ -22,6 +22,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function MyApp({ Component, pageProps }) {
+    const EMAIL_JS_USER_ID = "G00MdxYKw4lc77zc9";
+    console.log("User_ID_NEXT: " + "G00MdxYKw4lc77zc9");
+    console.log("User_ID_REACT: " + process.env.EMAILJS_USER_ID);
+    console.log("User_ID_NORMAL: " + process.env.REACT_APP_EMAILJS_USER_ID);
     return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(Component, {
             ...pageProps
