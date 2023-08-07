@@ -4,19 +4,20 @@ import styles from '../styles/Hit-me-up.module.css';
 import { useState } from 'react';
 
 // Initialize EmailJS SDK with the user_id
-const EMAIL_JS_USER_ID = 'G00MdxYKw4lc77zc9'
+const EMAIL_JS_USER_ID = process.env.NEXT_PUBLIC_EMAILJS_USER_ID;
 emailjs.init(EMAIL_JS_USER_ID);
 
 function Hit_me_up() {
-  console.log('REACT_APP_TEST: '+ process.env.REACT_APP_TEST);
-  const SERVICE_ID = 'service_m13441p'
-  const TEMPLATE_ID = 'template_apsnfu6'
-  
+  const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+  const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+
   const [formData, setFormData] = useState({
     user_name: '',
     user_email: '',
     message: '',
   });
+
+  const [lastSentTimestamp, setLastSentTimestamp] = useState(null); // Track last sent timestamp
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -30,13 +31,23 @@ function Hit_me_up() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    
-    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current)
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
+
+    // Check if enough time has passed since the last email was sent
+    const currentTime = Date.now();
+    if (lastSentTimestamp && currentTime - lastSentTimestamp < 5 * 60 * 1000) {
+      console.log('Too soon to send another email.');
+      return;
+    }
+
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current).then(
+      (result) => {
+        console.log(result.text);
+        setLastSentTimestamp(currentTime); // Update last sent timestamp
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
   };
 
   return (
