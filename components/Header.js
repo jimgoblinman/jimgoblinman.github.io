@@ -8,13 +8,7 @@ function Header() {
         
         <div className={styles.griditem}>
           <div className={styles.imageContainer}>
-              <Image
-                className={styles.roundImage}
-                src="/assets/placeholder.png"
-                alt="Description of the image"
-                width={36}
-                height={36}
-              />
+            <img src="assets/placeholder.png" alt="Image description" className={styles.roundImage}/>
           </div>
         </div>
 

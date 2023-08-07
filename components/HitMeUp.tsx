@@ -3,7 +3,6 @@ import emailjs from 'emailjs-com';
 import styles from '../styles/Hit-me-up.module.css';
 import { useState } from 'react';
 
-// Initialize EmailJS SDK with the user_id
 const EMAIL_JS_USER_ID = process.env.NEXT_PUBLIC_EMAILJS_USER_ID;
 emailjs.init(EMAIL_JS_USER_ID);
 
@@ -16,8 +15,6 @@ function Hit_me_up() {
     user_email: '',
     message: '',
   });
-
- // const [lastSentTimestamp, setLastSentTimestamp] = useState(null); // Track last sent timestamp
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -32,7 +29,6 @@ function Hit_me_up() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    // Check if enough time has passed since the last email was sent
     const currentTime = Date.now();
     if (localStorage.getItem('lastSentTimeStamp') && currentTime - parseInt(localStorage.getItem('lastSentTimeStamp')) < 5 * 60 * 1000) {
       console.log('Too soon to send another email.');
@@ -42,7 +38,6 @@ function Hit_me_up() {
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current).then(
       (result) => {
         console.log(result.text);
-        //setLastSentTimeStamp(currentTime); // Update last sent timestamp
         localStorage.setItem('lastSentTimeStamp', Date.now().toString());
       },
       (error) => {
@@ -55,10 +50,12 @@ function Hit_me_up() {
     <>
       <div id='hit_me_up' className={styles['Hit-me-up']}>
         <div className={styles['text-box']}>
+          <div>
           <h2>Hit me up!</h2>
           <p>Hello there! 🖐️ If you've got any questions about me or my website, or if you'd like to share some helpful feedback for my portfolio site, feel free to drop me a line using the form below. I'm always open to hearing from fellow developers and tech enthusiasts like you! 😊👨‍💻<br /><br />
             By the way, did you hear the one about the programmer who walked into a bar and ordered 1.0000001 root beers? The bartender replied, "I'll have to charge you extra – that's a 'real' root beer!" 🍻😄<br /><br />
             Anyway, jokes aside, I'm not just your regular developer; I take pride in being a problem-solving wizard who can turn coding challenges into enjoyable adventures. So why not reach out and let's have a delightful conversation about IT and beyond? Looking forward to hearing from you! 🚀📧</p>
+            </div>
         </div>
         <div>
           <form ref={form} className={styles.formContainer} onSubmit={sendEmail}>
