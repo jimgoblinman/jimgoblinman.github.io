@@ -9,6 +9,9 @@ function MyApp({ Component, pageProps }) {
   console.log("User_ID_NEXT: "+process.env.NEXT_PUBLIC_EMAILJS_USER_ID)
   console.log("User_ID_REACT: "+process.env.EMAILJS_USER_ID)
   console.log("User_ID_NORMAL: "+process.env.REACT_APP_EMAILJS_USER_ID)
+  console.log("User_ID_NEXT_SECRET: "+secrets.NEXT_PUBLIC_EMAILJS_USER_ID)
+
+  console.log("User_ID_NEXT_config: "+ EMAIL_JS_USER_ID)
   return <>
     <Component 
     {...pageProps} />
