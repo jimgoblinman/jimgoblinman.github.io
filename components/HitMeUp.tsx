@@ -16,18 +16,61 @@ function Hit_me_up() {
     message: '',
   });
 
+  const [nameValid, setNameValid] = useState('empty');
+  const [emailValid, setEmailValid] = useState('empty');
+  const [messageValid, setMessageValid] = useState('empty');
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevFormData) => ({
       ...prevFormData,
       [name]: value,
     }));
+
+    // Update validation status for the corresponding field
+    if (name === 'user_name') {
+      if (value.trim().length < 2) {
+        setNameValid('false');
+      } else {
+        setNameValid('true');
+      }
+    } else if (name === 'user_email') {
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
+        setEmailValid('false');
+      } else {
+        setEmailValid('true');
+      }
+    } else if (name === 'message') {
+      if (value.trim().length < 2) {
+        setMessageValid('false');
+      } else {
+        setMessageValid('true');
+      }
+    }
   };
 
   const form = useRef();
 
+  const validateInput = () => {
+    let isValid = true;
+
+    if (nameValid === 'false' || emailValid === 'false' || messageValid === 'false') {
+      isValid = false;
+    }
+
+    return isValid;
+  };
+
   const sendEmail = (e) => {
     e.preventDefault();
+
+    if (!validateInput()) {
+      console.log(validateInput()); //Works like a charm
+      console.log("nameValid: "+nameValid);
+      console.log("emailValid: "+emailValid);
+      console.log("messageValid: "+messageValid);
+      return;
+    }
 
     const currentTime = Date.now();
     if (localStorage.getItem('lastSentTimeStamp') && currentTime - parseInt(localStorage.getItem('lastSentTimeStamp')) < 5 * 60 * 1000) {
@@ -46,6 +89,34 @@ function Hit_me_up() {
     );
   };
 
+  function getName(nameValid, inputValue) {
+    if (nameValid=='true') {
+      return styles['isValid']; // Valid input
+    } else if (inputValue.trim() === '') {
+      return `${styles['isEmpty']}`; // Empty input
+    } else if (nameValid =="false"){
+      return `${styles['isFalse']}`; // Invalid input
+    }
+  }
+  function getEmail(emailValid, inputValue) {
+    if (emailValid=='true') {
+      return styles['isValid']; // Valid input
+    } else if (inputValue.trim() === '') {
+      return `${styles['isEmpty']}`; // Empty input
+    } else if (emailValid =="false"){
+      return `${styles['isFalse']}`; // Invalid input
+    }
+  }
+  function getMessage(messageValid, inputValue) {
+    if (messageValid=='true') {
+      return styles['isValid']; // Valid input
+    } else if (inputValue.trim() === '') {
+      return `${styles['isEmpty']}`; // Empty input
+    } else if (messageValid =="false"){
+      return `${styles['isFalse']}`; // Invalid input
+    }
+  }
+  
   return (
     <>
       <div id='hit_me_up' className={styles['Hit-me-up']}>
@@ -56,18 +127,20 @@ function Hit_me_up() {
             By the way, did you hear the one about the programmer who walked into a bar and ordered 1.0000001 root beers? The bartender replied, "I'll have to charge you extra – that's a 'real' root beer!" 🍻😄<br /><br />
             Anyway, jokes aside, I'm not just your regular developer; I take pride in being a problem-solving wizard who can turn coding challenges into enjoyable adventures. So why not reach out and let's have a delightful conversation about IT and beyond? Looking forward to hearing from you! 🚀📧</p>
             </div>
-        </div>
+        </div> 
         <div>
           <form ref={form} className={styles.formContainer} onSubmit={sendEmail}>
             <div className={styles['name-email']}>
-              <input type="text" name="user_name" value={formData.user_name} placeholder='Name' onChange={handleChange} /><br />
-              <input type="email" name="user_email" value={formData.user_email} placeholder='Email' onChange={handleChange} /><br />
+              <input type="text" name="user_name" value={formData.user_name} placeholder='Name' onChange={handleChange} className={getName(nameValid, formData.user_name)}/><br />
+              <input type="text" name="user_email" value={formData.user_email} placeholder='Email' onChange={handleChange} className={getEmail(emailValid, formData.user_email)}/><br />
             </div>
             <textarea
               name="message"
               value={formData.message}
               placeholder='Message'
-              onChange={handleChange} />
+              onChange={handleChange}
+              className={getMessage(messageValid, formData.message)} 
+              />
             <br />
             <button type='submit'>Hit me up!</button>
           </form>
