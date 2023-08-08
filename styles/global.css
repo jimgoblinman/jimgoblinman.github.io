@@ -2,7 +2,7 @@ body {
     margin: 0; 
 }
 
-p {
+p, ul {
     color: #d4d4d4;
 }
 

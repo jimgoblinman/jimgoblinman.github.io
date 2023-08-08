@@ -1,10 +1,39 @@
 .WelcomeBox {
-    display: flex; /* Use Flexbox to align items */
-    flex-grow: 1;
-    align-items: center; /* Align items vertically in the center */
-    justify-content: center; /* Center the content horizontally */
-    height: 100%;   
+    display: grid; /* Use Flexbox to align items */
+    grid-template-columns: 50% 50%;
+    height: 92%;
+    
   }
+
+.WelcomeBox h1{
+  margin: 0;
+}
+
+.Welcome{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10%;
+  padding-right: 10%;
+
+}
+
+.Projects {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+
+
+.Projects ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
   
   .WelcomeText {
     font-size: 22px;
