@@ -1,8 +1,7 @@
 .WelcomeBox {
     display: grid; /* Use Flexbox to align items */
     grid-template-columns: 50% 50%;
-    height: 92%;
-    
+    height: 92%;    
   }
 
 .WelcomeBox h1{
@@ -23,11 +22,8 @@
   flex-direction: column; 
   align-items: center;
   justify-content: center;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-right: 20%;
 }
-
-
 
 .Projects ul {
     margin: 0;
@@ -40,3 +36,50 @@
     color: white;
   }
   
+.Projects ul li {
+  margin-bottom: 20%;
+}
+
+.Projects h3 {
+  color: #a80000;
+}
+.Projects h3, .Projects h1{
+  font-family: "moby-monospace", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+.Projects a {
+  text-decoration: none;
+  color:inherit;
+}
+
+.WelcomeBox {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 92%;
+}
+
+/* Other styles... */
+
+.Projects ul li a {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  width: fit-content;
+}
+
+.Projects ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #731010;
+  transition: width 0.5s ease;
+}
+
+.Projects ul li a:hover::before {
+  width: 100%;
+}
+

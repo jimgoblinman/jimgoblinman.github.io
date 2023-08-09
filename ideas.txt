@@ -57,3 +57,16 @@ Add an interval to reduce spammage
 
 
 https://dunks1980.com/ --> MainPage similar design
+
+
+main page --> 8 hours left --> 9th
+finetuning --> 12 hours (including smoothscroll)
+certificates --> 6 and up
+
+
+Text for MainPage: 
+During a rigorous school project week, my partner Nicolas Thöni Castillo and I collaborated on creating an Android Application. Our app utilized the Hypixel API to retrieve Game Data, which we parsed and presented as both general and player statistics.
+
+Together with my colleagues Alessandro Röthenmund and Jakob Jörns, we embarked on a project aimed at crafting a Minecraft-inspired clone named JCraft. This unique creation is designed to operate directly within web browsers, and to bring it to life, we harnessed the capabilities of Three.js as our chosen framework.
+
+During my time at school, I crafted a compact Python task application that presently operates within the console environment. This application enables users to perform essential tasks like creating, updating, reading, and deleting tasks. To facilitate this, I integrated MongoDB hosted on MongoDB Atlas, along with implementing fundamental error-handling mechanisms. While currently in its rudimentary form, I am considering the possibility of expanding this project by introducing a front-end interface in the future.
