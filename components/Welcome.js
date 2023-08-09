@@ -35,8 +35,6 @@ function Welcome() {
             <div>
               With colleagues Alessandro Röthenmund and Jakob Jörns, we created a
               Minecraft-inspired clone called JCraft.
-            </div>
-            <div>
               This unique project operates in web browsers using Three.js.
             </div>
           </div>
@@ -48,8 +46,6 @@ function Welcome() {
               While at school, I developed a compact Python task app for console
               use. It handles essential tasks and uses integrated MongoDB from
               MongoDB Atlas.
-            </div>
-            <div>
               I'm exploring a front-end interface expansion.
             </div>
           </div>

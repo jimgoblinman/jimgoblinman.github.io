@@ -1,7 +1,7 @@
 .WelcomeBox {
     display: grid; /* Use Flexbox to align items */
     grid-template-columns: 50% 50%;
-    height: 92%;    
+    height: 100%;    
   }
 
 .WelcomeBox h1{

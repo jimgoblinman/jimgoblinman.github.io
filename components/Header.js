@@ -1,11 +1,32 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import styles from '../styles/Header.module.css';
-import Image from 'next/image';
+
 
 function Header() {
+  const [isHeaderVisible, setIsHeaderVisible] = useState(true);
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+
+  const handleScroll = () => {
+    if (typeof window !== 'undefined') {
+      const currentScrollPos = window.scrollY;
+      const scrollingUp = prevScrollPos > currentScrollPos;
+
+      setIsHeaderVisible(scrollingUp || currentScrollPos <= 100);
+      setPrevScrollPos(currentScrollPos);
+    }
+  };
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.addEventListener('scroll', handleScroll);
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }
+  }, [prevScrollPos]);
+
   return (
-    <header className={styles.header}>
-        
+    <header className={`${styles.header} ${isHeaderVisible ? '' : styles.hidden}`}>
         <div className={styles.griditem}>
           <div className={styles.imageContainer}>
             <img src="assets/placeholder.png" alt="Image description" className={styles.roundImage}/>
