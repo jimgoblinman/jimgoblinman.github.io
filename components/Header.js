@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import styles from '../styles/Header.module.css';
+import { Link } from 'react-scroll';
 
 
 function Header() {
@@ -37,11 +38,11 @@ function Header() {
         
        <div className={styles.griditem}></div>
             
-            <div className={styles.griditem}><h1><a href="#about">About</a></h1></div>
-            <div className={styles.griditem}><h1><a href="#journey">Journey</a></h1></div>
-            <div className={styles.griditem}><h1><a href="#hit_me_up">Hit me up</a></h1></div>
-            <div className={styles.griditem}><h1><a href="#projects">Projects</a></h1></div>
-            <div className={styles.griditem}></div>
+        <div className={styles.griditem}><h1><Link to="about" smooth={true}>About</Link></h1></div>
+        <div className={styles.griditem}><h1><Link to="journey" smooth={true}>Journey</Link></h1></div>
+        <div className={styles.griditem}><h1><Link to="hit_me_up" smooth={true}>Hit me up</Link></h1></div>
+        <div className={styles.griditem}><h1><Link to="certificats" smooth={true}>Certificats</Link></h1></div>
+        <div className={styles.griditem}></div>
                
     </header>
   );

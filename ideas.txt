@@ -59,8 +59,8 @@ Add an interval to reduce spammage
 https://dunks1980.com/ --> MainPage similar design
 
 
-main page --> 8 hours left --> 9th
-finetuning --> 12 hours (including smoothscroll)
+main page --> 8 hours left --> 9th --> almost done footer for description 1h 30min
+finetuning --> 12 hours (including smoothscroll) //smoothscroll done
 certificates --> 6 and up
 
 
