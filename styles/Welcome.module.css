@@ -83,3 +83,10 @@
   width: 100%;
 }
 
+.projectDescription div {
+  margin: 1.5%;
+}
+
+.Projects a:hover{
+  color: #731010; /* Change the link color on hover */
+}

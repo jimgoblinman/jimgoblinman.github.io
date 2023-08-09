@@ -1,8 +1,5 @@
 import React from 'react';
 import styles from '../styles/index.module.css'
-import colors from '../theme/theme';
-require('dotenv').config();
-
 
 import About from '../components/About';
 import Home from '../components/Home';
@@ -17,14 +14,14 @@ function App() {
       <style jsx global>{`
         body {
           margin: 0;
-          background-color: ${colors.background};
+          background-color: #1f1f1f;
         }
         a {
-          color: ${colors.hyperlinks};
+          color: #a80000;
         }
         
         a:hover {
-          color: ${colors.buttons};
+          color: #731010;
         }
       `}</style>
 
