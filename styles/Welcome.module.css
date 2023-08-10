@@ -56,7 +56,7 @@
 .WelcomeBox {
   display: grid;
   grid-template-columns: 50% 50%;
-  height: 92%;
+  height: 100%;
 }
 
 /* Other styles... */
@@ -89,4 +89,35 @@
 
 .Projects a:hover{
   color: #731010; /* Change the link color on hover */
+}
+
+.footer-bar {
+  display: flex; 
+  align-items: center;
+}
+
+.footer-bar div {
+  width: 50%;
+}
+
+
+.footer-bar a {
+  text-decoration: none;
+  color: #a80000;;
+  position: relative;
+}
+
+.footer-bar a::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #731010;
+  transition: width 0.5s ease;
+}
+
+.footer-bar a:hover::before {
+  width: 100%;
 }

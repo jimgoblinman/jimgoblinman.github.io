@@ -27,6 +27,14 @@ function Welcome() {
               Our app utilized the Hypixel API to retrieve Game Data, which we parsed
               and presented as both general and player statistics.
             </div>
+            <div className={styles['footer-bar']}>
+              <div>
+              <a href='https://developer.android.com/studio'>Android Studio</a>
+              </div>
+              <div>
+              <a>Github</a>
+              </div>
+            </div>
           </div>
         );
       } else if (projectName === 'JCraft') {
@@ -36,6 +44,14 @@ function Welcome() {
               With colleagues Alessandro Röthenmund and Jakob Jörns, we created a
               Minecraft-inspired clone called JCraft.
               This unique project operates in web browsers using Three.js.
+            </div>
+            <div className={styles['footer-bar']}>
+              <div>
+                <a href='https://threejs.org/'>Three.js</a>
+              </div>
+              <div>
+                <a href="https://github.com/Antgenix1/JCraft">Github</a>
+              </div>
             </div>
           </div>
         );
@@ -47,6 +63,14 @@ function Welcome() {
               use. It handles essential tasks and uses integrated MongoDB from
               MongoDB Atlas.
               I'm exploring a front-end interface expansion.
+            </div>
+            <div className={styles['footer-bar']}>
+              <div>
+                <a href='https://pymongo.readthedocs.io/en/stable/'>PyMongo</a>
+              </div>
+              <div> 
+                <a href="https://github.com/jimgoblinman/NoteHub">Github</a>
+              </div>
             </div>
           </div>
         );
