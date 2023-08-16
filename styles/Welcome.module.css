@@ -121,3 +121,7 @@
 .footer-bar a:hover::before {
   width: 100%;
 }
+
+@media (max-width: 767px) {
+  
+}

@@ -13,3 +13,23 @@ a {
 h1, h2, h3, h4, h5, h6 {
     color: white;
 }
+
+/* width of Scrollbar */
+::-webkit-scrollbar {
+  width: 1.2vh;
+}
+
+/* Color behind the Scrollbar */
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+ 
+/* Scrollbar Color */
+::-webkit-scrollbar-thumb {
+  background: #a80000; 
+}
+
+/* Scrollbar Color on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #731010; 
+  }

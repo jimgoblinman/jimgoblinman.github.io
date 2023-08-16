@@ -1,12 +1,16 @@
 import React, { useState } from 'react';
 import styles from '../styles/Welcome.module.css';
 
+import { useWindowWidth } from '../components/WindowWidth'; // Adjust the path
+
 function Welcome() {
   const [displayText, setDisplayText] = useState(
     'Welcome, my friend! Embark on a profound journey through my portfolio.'
   );
   const [selectedProject, setSelectedProject] = useState('');
 
+  //const windowWidth = useWindowWidth(); //Check the px's of the window width
+  
   const handleProjectClick = (projectName) => {
     if (selectedProject === projectName) {
       setSelectedProject('');
@@ -29,10 +33,10 @@ function Welcome() {
             </div>
             <div className={styles['footer-bar']}>
               <div>
-              <a href='https://developer.android.com/studio'>Android Studio</a>
+                <a href='https://developer.android.com/studio' target="_blank" rel="noopener noreferrer">Android Studio</a>
               </div>
               <div>
-              <a>Github</a>
+                <a href='https://github.com/' target="_blank" rel="noopener noreferrer">Github</a>
               </div>
             </div>
           </div>
@@ -47,10 +51,10 @@ function Welcome() {
             </div>
             <div className={styles['footer-bar']}>
               <div>
-                <a href='https://threejs.org/'>Three.js</a>
+                <a href='https://threejs.org/' target="_blank" rel="noopener noreferrer">Three.js</a>
               </div>
               <div>
-                <a href="https://github.com/Antgenix1/JCraft">Github</a>
+                <a href='https://github.com/Antgenix1/JCraft' target="_blank" rel="noopener noreferrer">Github</a>
               </div>
             </div>
           </div>
@@ -66,10 +70,10 @@ function Welcome() {
             </div>
             <div className={styles['footer-bar']}>
               <div>
-                <a href='https://pymongo.readthedocs.io/en/stable/'>PyMongo</a>
+                <a href='https://pymongo.readthedocs.io/en/stable/' target="_blank" rel="noopener noreferrer">PyMongo</a>
               </div>
-              <div> 
-                <a href="https://github.com/jimgoblinman/NoteHub">Github</a>
+              <div>
+                <a href='https://github.com/jimgoblinman/NoteHub' target="_blank" rel="noopener noreferrer">Github</a>
               </div>
             </div>
           </div>
