@@ -123,5 +123,16 @@
 }
 
 @media (max-width: 767px) {
-  
+  .WelcomeBox {
+    grid-template-columns: 100%;
+  }
+  .Projects {
+    display: none;
+  }
+
+  .WelcomeBox {
+    display: flex;
+    
+  }
+
 }

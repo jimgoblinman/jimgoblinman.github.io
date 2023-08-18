@@ -6,7 +6,7 @@ import Home from '../components/Home';
 import Journey from '../components/Journey';
 import Hit_me_up from '../components/HitMeUp';
 import Footer from '../components/Footer';
-
+import Projects from '../components/ProjectsMobile';
 
 function App() {
   return (
@@ -39,6 +39,10 @@ function App() {
 
         {/* Fifth Column: Footer */}
         <Footer></Footer>
+    </div>
+    <div className={styles['gridlayout-container-mobile']}>
+        <Home></Home>
+        <Projects></Projects>
     </div>
     </>
     

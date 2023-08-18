@@ -106,7 +106,8 @@
 }
 
 .formContainer textarea:not(:placeholder-shown) {
-  padding-left: 10px; 
+  padding-left: 10px;
+  padding-top: 10px;
 }
 
 /* Target the input field during autocomplete suggestions */
@@ -119,27 +120,32 @@
 .formContainer textarea::-webkit-input-placeholder {
   padding-left: 10px; /* Adjust the padding to move the placeholder text to the right */
   text-align: left; /* Adjust the text alignment as needed */
+
 }
 
 .formContainer input::-moz-placeholder,
 .formContainer textarea::-moz-placeholder {
   padding-left: 10px;
   text-align: left;
+  padding-top: 10px;
+
 }
 
 .formContainer input:-ms-input-placeholder,
 .formContainer textarea:-ms-input-placeholder {
   padding-left: 10px;
   text-align: left;
+  
 }
 
 .formContainer input::placeholder,
 .formContainer textarea::placeholder {
   padding-left: 10px;
   text-align: left;
+  
 }
 
 .formContainer textarea::placeholder {
   padding-top: 10px;
-}
 
+}

@@ -82,7 +82,7 @@
   
 }
 .mobile img {
-  width: 60%;  
+  width: 80%;  
   transition: transform 0.3s ease; /* Add a transition for smooth rotation */
 
 }
@@ -127,7 +127,17 @@
 @media (max-width: 767px) {
   .header{
     grid-template-columns: 15% auto;
+    transform: translateY(0);
+    transition: none;
   }
+
+  .header.hidden {
+    transform: translateY(0);
+    transition: none;
+  }
+  
+  
+  
   .griditem {
     display: none;
   }

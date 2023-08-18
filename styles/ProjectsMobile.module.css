@@ -1,0 +1,13 @@
+/* ProjectsMobile.module.css */
+.project-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .project {
+    margin-bottom: 5%; /* Add the desired gap between projects */
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  

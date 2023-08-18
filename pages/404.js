@@ -10,6 +10,6 @@ function Custom404() {
       <a className={styles['link']} href="/">Go back to the homepage</a>
     </div>
   );
-}
+} 
 
 export default Custom404;
