@@ -170,7 +170,9 @@ function Hit_me_up() {
           </form>
         </div>
       </div>
-      <ToastContainer position="bottom-right" />
+      <div className={styles.Toast}>
+        <ToastContainer position="bottom-right"/>
+      </div>
     </>
   );
 }

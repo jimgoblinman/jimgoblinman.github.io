@@ -154,6 +154,13 @@
   display: none;
 }
 
+.Toast {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+}
+
 @media (max-width: 767px) { 
   .Hit-me-up {
     display: grid;
