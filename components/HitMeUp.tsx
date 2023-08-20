@@ -58,7 +58,7 @@ function Hit_me_up() {
   const validateInput = () => {
     let isValid = true;
 
-    if (nameValid === 'false' || emailValid === 'false' || messageValid === 'false') {
+    if (nameValid === 'false' || emailValid === 'false' || messageValid === 'false' || nameValid === 'empty' || emailValid === 'empty' || messageValid === 'empty') {
       isValid = false;
     }
 
