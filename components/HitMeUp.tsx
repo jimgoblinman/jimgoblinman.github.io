@@ -4,6 +4,7 @@ import styles from '../styles/Hit-me-up.module.css';
 import { useState } from 'react';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
 
 
 
@@ -73,6 +74,10 @@ function Hit_me_up() {
       console.log("nameValid: "+nameValid);
       console.log("emailValid: "+emailValid);
       console.log("messageValid: "+messageValid);
+
+      toast.error('Input not Valid', {
+        position: toast.POSITION.BOTTOM_RIGHT
+      });
       return;
     }
 
@@ -165,6 +170,7 @@ function Hit_me_up() {
           </form>
         </div>
       </div>
+      <ToastContainer position="bottom-right" />
     </>
   );
 }
