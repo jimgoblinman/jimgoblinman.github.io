@@ -24,4 +24,31 @@
 .about-box h2 {
     color: white;
 }
+
+.about-box-mobile {
+    display: none; /* Use Flexbox to align items */
+    align-items: center; /* Align items vertically in the center */
+    gap: 2%; /* Add some spacing between the image and the text */
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-color: #731010;
+}
+
+.text {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+@media (max-width: 767px) {
+    .about-box {
+        display: none;
         
+    }
+    .about-box-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+
+}

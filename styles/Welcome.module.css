@@ -131,8 +131,13 @@
   }
 
   .WelcomeBox {
-    display: flex;
-    
+    display: flex; 
   }
+
+  .Welcome {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
 
 }

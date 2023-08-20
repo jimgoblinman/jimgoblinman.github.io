@@ -52,6 +52,7 @@
   border: 1px solid #4a65ff; /* Border color */ /* Add some padding for better appearance */
   width: 100%;
   padding: 0;
+  resize: none;
   
 }
 
@@ -147,5 +148,34 @@
 
 .formContainer textarea::placeholder {
   padding-top: 10px;
+}
 
+.name-email-mobile {
+  display: none;
+}
+
+@media (max-width: 767px) { 
+  .Hit-me-up {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    
+  }
+  .name-email {
+    display: none;
+  }
+  .name-email-mobile {
+    display: flex;
+  flex-direction: column; /* Stack the input fields vertically */
+  align-items: stretch; /* Stretch the input fields to fill the width */
+  justify-content: space-between; /* Add space between the input fields */
+  width: 100%;
+  height: auto; /* Let the height adjust based on content */
+  margin-bottom: 10px; /* Add some spacing between the input boxes */
+  }
+  .text-box {
+    width: 100%;
+  }
+  
+  
 }

@@ -62,3 +62,28 @@
 .contact h2, .info h2 {
     margin: 0;
 }
+
+.footer-mobile {
+    display: none;
+    grid-template-rows: repeat(auto auto auto auto);
+}
+
+@media (max-width: 767px) {
+    .Footerbox {
+        display: none;
+    }
+    .footer-mobile {
+        display: grid;
+    }
+    .info, .contact {
+        padding: 0;
+        display: flex; 
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        
+    }
+    
+
+
+}

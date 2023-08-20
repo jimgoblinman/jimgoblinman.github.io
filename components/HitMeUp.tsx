@@ -134,6 +134,12 @@ function Hit_me_up() {
               <input type="text" name="user_name" value={formData.user_name} placeholder='Name' onChange={handleChange} className={getName(nameValid, formData.user_name)}/><br />
               <input type="text" name="user_email" value={formData.user_email} placeholder='Email' onChange={handleChange} className={getEmail(emailValid, formData.user_email)}/><br />
             </div>
+            <div className={styles['name-email-mobile']}>
+              <input type="text" name="user_name" value={formData.user_name} placeholder='Name' onChange={handleChange} className={getName(nameValid, formData.user_name)}/><br />
+            </div>
+            <div className={styles['name-email-mobile']}>
+              <input type="text" name="user_email" value={formData.user_email} placeholder='Email' onChange={handleChange} className={getEmail(emailValid, formData.user_email)}/><br />
+            </div>
             <textarea
               name="message"
               value={formData.message}
