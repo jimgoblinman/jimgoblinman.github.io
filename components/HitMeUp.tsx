@@ -2,6 +2,10 @@ import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
 import styles from '../styles/Hit-me-up.module.css';
 import { useState } from 'react';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 
 const EMAIL_JS_USER_ID = process.env.NEXT_PUBLIC_EMAILJS_USER_ID;
 emailjs.init(EMAIL_JS_USER_ID);
@@ -74,7 +78,10 @@ function Hit_me_up() {
 
     const currentTime = Date.now();
     if (localStorage.getItem('lastSentTimeStamp') && currentTime - parseInt(localStorage.getItem('lastSentTimeStamp')) < 5 * 60 * 1000) {
-      console.log('Too soon to send another email.');
+        toast.error('Too soon to send another email.', {
+          position: toast.POSITION.BOTTOM_RIGHT
+        });
+        console.log('Too soon to send another email.');
       return;
     }
 
@@ -82,9 +89,15 @@ function Hit_me_up() {
       (result) => {
         console.log(result.text);
         localStorage.setItem('lastSentTimeStamp', Date.now().toString());
+        toast.success('Email sent successfully!', {
+          position: toast.POSITION.BOTTOM_RIGHT
+        });
       },
       (error) => {
         console.log(error.text);
+        toast.error('Error sending email.', {
+          position: toast.POSITION.BOTTOM_RIGHT
+        });
       }
     );
   };

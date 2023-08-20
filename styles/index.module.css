@@ -17,6 +17,6 @@
    
     .gridlayout-container-mobile {
         display: grid;
-        grid-template-rows: 100vh auto repeat(3, 100vh) 20vh;
+        grid-template-rows: 100vh auto repeat(3, 1fr) 20vh;
     }
 }

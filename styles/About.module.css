@@ -1,4 +1,3 @@
-@import 'C:\Users\jimvi\OneDrive\Dokumente\Coding_new\portfolio\theme\theme.js';
 
 .about-box {
     display: flex; /* Use Flexbox to align items */
@@ -29,9 +28,9 @@
     display: none; /* Use Flexbox to align items */
     align-items: center; /* Align items vertically in the center */
     gap: 2%; /* Add some spacing between the image and the text */
-    border-top: 2px solid;
     border-bottom: 2px solid;
     border-color: #731010;
+    margin-top: 5%;
 }
 
 .text {

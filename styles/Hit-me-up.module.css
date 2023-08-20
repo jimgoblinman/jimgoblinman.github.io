@@ -158,7 +158,7 @@
   .Hit-me-up {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 60% 40%;
     
   }
   .name-email {
