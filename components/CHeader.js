@@ -52,12 +52,11 @@ function CHeader() {
           <div className={`${styles.griditem} ${styles.myName}`}><h2>James Vining</h2></div>
           
         <div className={styles.griditem}></div>
-
           <div className={styles.griditem}><h1><a href='/#about'>About</a></h1></div>
-          <div className={styles.griditem}><h1><a href='/#journey'>Journey</a></h1></div>
           <div className={styles.griditem}><h1><a href="/#hit_me_up">Hit me up</a></h1></div>
           <div className={styles.griditem}><h1><a href="certificates">Certificates</a></h1></div>
           <div className={styles.griditem}></div>
+
       </header>
       <div className={isMobileMenuOpen ? styles['no-scroll'] : ''}>
         <div
@@ -72,30 +71,23 @@ function CHeader() {
           </div>
             <div className={styles['mobile-menu-item']}>
             <h1>
-              <Link to='about' smooth={true} onClick={handleMobileMenuToggle}>
+              <a href='/#about'>
                 About
-              </Link>
+              </a>
             </h1>
           </div>
           <div className={styles['mobile-menu-item']}>
             <h1>
-              <Link to='journey' smooth={true} onClick={handleMobileMenuToggle}>
-                Journey
-              </Link>
-            </h1>
-          </div>
-          <div className={styles['mobile-menu-item']}>
-            <h1>
-              <Link to='hit_me_up' smooth={true} onClick={handleMobileMenuToggle}>
+              <a href='/#hit_me_up'>
                 Hit me up
-              </Link>
+              </a>
             </h1>
           </div>
           <div className={styles['mobile-menu-item']}>
             <h1>
-              <Link to='certificates' smooth={true} onClick={handleMobileMenuToggle}>
+              <a href='certificates'>
                 Certificates
-              </Link>
+              </a>
             </h1>
           </div>
         </div>

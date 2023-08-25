@@ -24,7 +24,7 @@
     background-color: #1f1f1f;
     height: 100%;
     width: 100%;
-    padding: 0; /* Remove the default padding */
+    padding: 0 !important; /* Remove the default padding */
 }
 
 .popupContent h2 {
@@ -45,24 +45,28 @@
 }
 
 .üK {
+    padding: 0;
     background-image: url('/assets/üK.png');
     background-size: cover; /* Adjust the background image size */
     background-repeat: no-repeat; /* Prevent image repetition */
 }
 
 .gibb {
+    padding: 0;
     background-image: url('/assets/gibb.png');
     background-size: cover; /* Adjust the background image size */
     background-repeat: no-repeat; /* Prevent image repetition */
 }
 
 .bwd {
+    padding: 0;
     background-image: url('/assets/bwd.png');
     background-size: cover; /* Adjust the background image size */
     background-repeat: no-repeat; /* Prevent image repetition */
 }
 
 .Praxistraining {
+    padding: 0;
     background-image: url('/assets/Praxistraining.png'); /* Adjust the path */
     background-size: cover;
     background-repeat: no-repeat;

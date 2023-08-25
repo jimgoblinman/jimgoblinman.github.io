@@ -10,7 +10,7 @@
 }
 
 .about-box img {
-    max-width: 40%;
+    max-width: 20%;
 }
 
  .about-box div {
@@ -46,6 +46,9 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+    .about-box-mobile img{
+        max-width: 50%;
     }
 
 

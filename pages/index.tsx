@@ -44,7 +44,6 @@ function App() {
         <Home></Home>
         <Projects></Projects>
         <About></About>
-        <Journey></Journey>
         <Hit_me_up></Hit_me_up>
         <Footer></Footer>
     </div>

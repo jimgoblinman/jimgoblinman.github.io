@@ -54,7 +54,6 @@ function Header() {
         <div className={styles.griditem}></div>
 
           <div className={styles.griditem}><h1><Link to="about" smooth={true}>About</Link></h1></div>
-          <div className={styles.griditem}><h1><Link to="journey" smooth={true}>Journey</Link></h1></div>
           <div className={styles.griditem}><h1><Link to="hit_me_up" smooth={true}>Hit me up</Link></h1></div>
           <div className={styles.griditem}><h1><a href="/certificates">Certificates</a></h1></div>
           <div className={styles.griditem}></div>
@@ -79,13 +78,6 @@ function Header() {
           </div>
           <div className={styles['mobile-menu-item']}>
             <h1>
-              <Link to='journey' smooth={true} onClick={handleMobileMenuToggle}>
-                Journey
-              </Link>
-            </h1>
-          </div>
-          <div className={styles['mobile-menu-item']}>
-            <h1>
               <Link to='hit_me_up' smooth={true} onClick={handleMobileMenuToggle}>
                 Hit me up
               </Link>
@@ -93,7 +85,7 @@ function Header() {
           </div>
           <div className={styles['mobile-menu-item']}>
             <h1>
-              <a to='certificates' onClick={handleMobileMenuToggle}>
+              <a href='certificates' onClick={handleMobileMenuToggle}>
                 Certificates
               </a>
             </h1>

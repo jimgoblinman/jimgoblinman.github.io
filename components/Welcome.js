@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import styles from '../styles/Welcome.module.css';
 
 import { useWindowWidth } from '../components/WindowWidth'; // Adjust the path
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css'; // Import the popup styles
 
 function Welcome() {
   const [displayText, setDisplayText] = useState(
@@ -24,8 +26,7 @@ function Welcome() {
         setDisplayText(
           <div className={styles.projectDescription}>
             <div>
-              During a rigorous school project week, my partner Nicolas Thöni
-              Castillo and I collaborated on creating an Android Application.
+              During a rigorous school project week, my colleague and I collaborated on creating an Android Application.
             </div>
             <div>
               Our app utilized the Hypixel API to retrieve Game Data, which we parsed
@@ -38,6 +39,20 @@ function Welcome() {
               <div>
                 <a href='https://github.com/' target="_blank" rel="noopener noreferrer">Github</a>
               </div>
+              <div>
+              <Popup
+                trigger={<div className={styles['c-item']}><a>Project Abstract</a></div>}
+                modal
+                contentStyle={{
+                  backgroundColor:'1f1f1f',
+                  padding: 0,
+                }}
+              >
+                {close => (
+                    <embed src="certificates/SkyCraft_Abstract.pdf" type="application/pdf" width="100%" height="500px"/>
+                )}
+              </Popup>
+              </div>
             </div>
           </div>
         );
@@ -45,9 +60,7 @@ function Welcome() {
         setDisplayText(
           <div className={styles.projectDescription}>
             <div>
-              With colleagues Alessandro Röthenmund and Jakob Jörns, we created a
-              Minecraft-inspired clone called JCraft.
-              This unique project operates in web browsers using Three.js.
+            Together with my colleagues, we created a Minecraft-inspired clone called JCraft. This unique project operates in web browsers using Three.js.
             </div>
             <div className={styles['footer-bar']}>
               <div>
@@ -55,6 +68,20 @@ function Welcome() {
               </div>
               <div>
                 <a href='https://github.com/Antgenix1/JCraft' target="_blank" rel="noopener noreferrer">Github</a>
+              </div>
+              <div>
+              <Popup
+                trigger={<div className={styles['c-item']}><a>Project Abstract</a></div>}
+                modal
+                contentStyle={{
+                  backgroundColor:'1f1f1f',
+                  padding: 0,
+                }}
+              >
+                {close => (
+                    <embed src="certificates/JCraft_Abstract.pdf" type="application/pdf" width="100%" height="500px"/>
+                )}
+              </Popup>
               </div>
             </div>
           </div>
@@ -74,6 +101,20 @@ function Welcome() {
               </div>
               <div>
                 <a href='https://github.com/jimgoblinman/NoteHub' target="_blank" rel="noopener noreferrer">Github</a>
+              </div>
+              <div>
+                <Popup
+                trigger={<div className={styles['c-item']}><a>Project Abstract</a></div>}
+                modal
+                contentStyle={{
+                  backgroundColor:'1f1f1f',
+                  padding: 0,
+                }}
+              >
+                {close => (
+                    <embed src="certificates/NoteHub.pdf" type="application/pdf" width="100%" height="500px"/>
+                )}
+              </Popup>
               </div>
             </div>
           </div>

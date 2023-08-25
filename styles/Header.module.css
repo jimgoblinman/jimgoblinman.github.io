@@ -156,3 +156,7 @@
 
 
 }
+
+.mobile-menu-item a {
+  text-decoration: none;
+}

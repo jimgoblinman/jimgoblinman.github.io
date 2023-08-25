@@ -35,6 +35,7 @@ function Certificates() {
                 modal
                 contentStyle={{
                   backgroundColor:'1f1f1f',
+                  padding: 0,
                 }}
               >
                 {close => (
@@ -47,7 +48,10 @@ function Certificates() {
             </div>
             <div className={styles.gibb}>
               <Popup
-                trigger={<div className={styles['c-item']}><h2>gibb</h2></div>} modal>
+                trigger={<div className={styles['c-item']}><h2>gibb</h2></div>} modal contentStyle={{
+                  backgroundColor:'1f1f1f',
+                  padding: 0,
+                }}>
                 {close => (
                   <div className={styles.popupContent}>
                     <h2>Gibb Certificate</h2>
@@ -60,6 +64,10 @@ function Certificates() {
               <Popup
                 trigger={<div className={styles['c-item']}><h2>Praxistraining</h2></div>}
                 modal
+                contentStyle={{
+                  backgroundColor:'1f1f1f',
+                  padding: 0,
+                }}
               >
                 {close => (
                   <div className={styles.popupContent}>
@@ -73,6 +81,10 @@ function Certificates() {
               <Popup
                 trigger={<div className={styles['c-item']}><h2>bwd</h2></div>}
                 modal
+                contentStyle={{
+                  backgroundColor:'1f1f1f',
+                  padding: 0,
+                }}
               >
                 {close => (
                   <div className={styles.popupContent}>
