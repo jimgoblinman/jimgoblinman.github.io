@@ -1,0 +1,21 @@
+.outer-grid-container {
+    display: grid;
+    grid-template-rows: 8vh 92vh;
+    height: 100%;
+    width: 100%;
+}
+
+.certificates-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;    
+    height: 100%;
+    width: 100%;
+    background-color: red !important;
+}
+
+.grid-item {
+    width: 100%; /* Each grid item occupies 100% of the container's width */
+    height: 100%; /* Each grid item occupies 100% of the container's height */
+    border: 1px solid white; /* Optional border for visualization */
+  }

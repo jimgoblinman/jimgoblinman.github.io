@@ -1,0 +1,17 @@
+.certificats-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 100%;
+  width: 100%;
+}
+
+.item-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: grey;
+  margin-left: 2%;
+  height: 100%;
+  width: 100%;
+}
