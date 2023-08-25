@@ -85,7 +85,7 @@ function Header() {
           </div>
           <div className={styles['mobile-menu-item']}>
             <h1>
-              <a href='certificates' onClick={handleMobileMenuToggle}>
+              <a to='certificates' onClick={handleMobileMenuToggle}>
                 Certificates
               </a>
             </h1>

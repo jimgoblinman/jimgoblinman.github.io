@@ -112,7 +112,7 @@ function Welcome() {
                 }}
               >
                 {close => (
-                    <embed src="certificates/NoteHub.pdf" type="application/pdf" width="100%" height="500px"/>
+                    <embed src="certificates/NoteHub_Abstract.pdf" type="application/pdf" width="100%" height="500px"/>
                 )}
               </Popup>
               </div>
