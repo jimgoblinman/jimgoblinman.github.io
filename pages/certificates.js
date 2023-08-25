@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import styles from '../styles/certificates.module.css';
+import styles from '../styles/Certificates.module.css';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css'; // Import the popup styles
 
