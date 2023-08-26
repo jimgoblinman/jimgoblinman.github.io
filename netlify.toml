@@ -1,0 +1,6 @@
+[build]
+  command = "npm run build"  # Change this to your build command
+  publish = "./"             # Root directory, since build is in the root
+
+[build.environment]
+  NEXT_PRIVATE_TARGET = "production"  # If you have any environment variables
