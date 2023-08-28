@@ -8,6 +8,13 @@
   margin: 0;
 }
 
+.WelcomeBox{
+  font-family: "moby-monospace", monospace;
+  font-weight: 100;
+  font-size: 12pt;
+  font-style: normal;
+}
+
 .Welcome{
   display: flex;
   align-items: center;
@@ -39,6 +46,8 @@
 .Projects ul li {
   margin-bottom: 20%;
 }
+
+
 
 .Projects h3 {
   color: #a80000;
@@ -85,6 +94,10 @@
 
 .projectDescription div {
   margin: 1.5%;
+  font-family: "moby-monospace", monospace;
+  font-weight: 100;
+  font-size: 11pt; 
+  font-style: normal;
 }
 
 .Projects a:hover{

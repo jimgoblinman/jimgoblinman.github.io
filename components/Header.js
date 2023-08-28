@@ -56,6 +56,7 @@ function Header() {
           <div className={styles.griditem}><h1><Link to="about" smooth={true}>About</Link></h1></div>
           <div className={styles.griditem}><h1><Link to="hit_me_up" smooth={true}>Hit me up</Link></h1></div>
           <div className={styles.griditem}><h1><a href="/certificates">Certificates</a></h1></div>
+          <div className={styles.griditem}><h1><a href="/login">Login</a></h1></div>
           <div className={styles.griditem}></div>
       </header>
       <div className={isMobileMenuOpen ? styles['no-scroll'] : ''}>

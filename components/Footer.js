@@ -8,7 +8,7 @@ function Footer() {
         <div className={styles.Footerbox}>
           <div className={styles['Footer-header']}>
             <div className={styles['name-container']}> {/* For my name or smth */}
-              <p>James Vining</p>
+              <h3>James Vining</h3>
             </div>
             <div></div>
               <div className={styles['social-container']}> {/* For my socials, all in circular shape (linkdin/github/whatsapp) */}  
@@ -34,7 +34,7 @@ function Footer() {
 
         <div className={styles['footer-mobile']}>
           <div className={styles['name-container']}> {/* For my name or smth */}
-            <p>James Vining</p>
+            <h2>James Vining</h2>
           </div>
           <div className={styles['social-container']}>
                 <a href='https://wa.me/41797280659' target="_blank" alt="Whatsapp"><img src="assets/whatsapp.png"></img></a>

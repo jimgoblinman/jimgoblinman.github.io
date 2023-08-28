@@ -5,6 +5,13 @@
 
 }
 
+.Footerbox p {
+    font-family: "moby-monospace", monospace;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 10pt; 
+}
+
 .social-container a {
     width: 15%;
     border-radius: 50%;
@@ -26,6 +33,7 @@
     font-family: "moby-monospace", monospace;
     font-weight: 400;
     font-style: normal;
+    font-size: 16pt !important;
     font-size: large;
     display: flex;
     justify-content: center;
