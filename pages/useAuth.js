@@ -27,3 +27,5 @@ export const useAuth = () => {
     }
   }, [router]);
 };
+
+export default useAuth
