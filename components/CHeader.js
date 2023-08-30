@@ -34,7 +34,7 @@ function CHeader() {
   };
 
   return (
-    < >
+    <>
       <header className={`${styles.header} ${isHeaderVisible ? '' : styles.hidden}`}>
           <div className={styles.mobile}>
             <img
@@ -55,6 +55,7 @@ function CHeader() {
           <div className={styles.griditem}><h1><a href='/#about'>About</a></h1></div>
           <div className={styles.griditem}><h1><a href="/#hit_me_up">Hit me up</a></h1></div>
           <div className={styles.griditem}><h1><a href="certificates">Certificates</a></h1></div>
+          <div className={styles.griditem}><h1><a href="/login">Login</a></h1></div>
           <div className={styles.griditem}></div>
 
       </header>

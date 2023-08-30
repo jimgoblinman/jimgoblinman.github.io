@@ -1,15 +1,19 @@
 import { useState } from 'react';
 import styles from '../styles/login.module.css';
 import CryptoJS from 'crypto-js';
+import { useRouter } from 'next/router'
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
 
-import Header from '../components/Header';
+import CHeader from '../components/CHeader';
 import Footer from '../components/Footer';
 
 const Login = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
-  const publicKey = '1234567890abcdef'; // Replace with your public key
+  const router = useRouter(); // Get the router object from next/router
 
   const handleLogin = async () => {
     // Simulated fixed login credentials
@@ -29,33 +33,50 @@ const Login = () => {
       console.log(localStorage.getItem('usernameHash'));
       console.log(localStorage.getItem('passwordHash')); 
 
-
+      toast.success('Logged in successfully', {
+        position: toast.POSITION.BOTTOM_RIGHT
+      });
+      router.push('/certificates');
       // Redirect or perform other actions after successful login
     } else {
-      console.log('Login failed');
+      toast.error('Input not Valid', {
+        position: toast.POSITION.BOTTOM_RIGHT
+      });
+      console.log('Login failed'); // This should not be inside the else block
+      return;
     }
   };
 
   return (
     <>
+      <CHeader/>
       <div className={styles.loginPage}>
         <div className={styles.login}>
+          <div className={styles['login-title']}>
           <h2>Login</h2>
+          </div>
           <input
             type="text"
             placeholder="Username"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
+            className={styles.inputField}
           />
           <input
             type="password"
             placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            className={styles.inputField}
           />
-          <button onClick={handleLogin}>Login</button>
+          <button onClick={handleLogin} className={styles.loginButton}>Login</button>
+          <p className={styles.loginMessage}>Please log in to view the certificates page.</p>
         </div>
       </div>
+      <div className={styles.Toast}>
+        <ToastContainer position="bottom-right"/>
+      </div>
+      <Footer></Footer>
     </>
   );
 };

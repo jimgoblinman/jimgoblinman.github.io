@@ -4,6 +4,9 @@
     grid-template-columns: 30% 40% 30%;
 
 }
+.Footerbox {
+    background-color: #1f1f1f;
+}
 
 .Footerbox p {
     font-family: "moby-monospace", monospace;

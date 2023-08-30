@@ -2,12 +2,16 @@ import React, {useState} from 'react';
 import styles from '../styles/Certificates.module.css';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css'; // Import the popup styles
+import { useAuth } from '../pages/useAuth'; // Update the path accordingly
+
 
 import CHeader from '../components/CHeader';
 import Footer from '../components/Footer';
 
 function Certificates() {
 
+  useAuth();
+  
   return (
     <>
     <style jsx global>{`
