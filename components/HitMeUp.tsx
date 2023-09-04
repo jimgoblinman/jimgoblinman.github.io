@@ -89,11 +89,14 @@ function Hit_me_up() {
         console.log('Too soon to send another email.');
       return;
     }
-
+    
+    toast.info('Loading', {
+      position: toast.POSITION.BOTTOM_RIGHT
+    })
+    localStorage.setItem('lastSentTimeStamp', Date.now().toString());
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current).then(
       (result) => {
         console.log(result.text);
-        localStorage.setItem('lastSentTimeStamp', Date.now().toString());
         toast.success('Email sent successfully!', {
           position: toast.POSITION.BOTTOM_RIGHT
         });
