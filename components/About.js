@@ -12,7 +12,7 @@ function About() {
         <br></br><br></br>
         Currently I attend an IT school in Bern. I like the school very much and I was able to find friends quickly. I enjoy the lessons very much because the teachers are always making it very interesting. I have a lot of different hobbies. One of them is IT, as I like working with PCs and I like programming. My dream job is to become a software developer, partly due to my Stepfather, because he is a software developer, who aroused my interest in this domain. In my free time I like doing sport. I currently attend karate lessons and I like playing different ball sports.</p>
     </div>
-    <img src="assets/placeholder.png" alt="Image description" />
+    <img  className={styles['placeholder-image']} src="assets/placeholder.png" alt="Image description" />
     </div>
 
     <div id="about" className={styles['about-box-mobile']}>

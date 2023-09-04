@@ -20,6 +20,12 @@
     flex-direction: row;
 }
 
+.c-item h2 {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    
+}
+
 .popupContent {
     background-color: #1f1f1f;
     height: 100%;

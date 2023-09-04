@@ -37,7 +37,7 @@ function Welcome() {
                 <a href='https://developer.android.com/studio' target="_blank" rel="noopener noreferrer">Android Studio</a>
               </div>
               <div>
-                <a href='https://github.com/' target="_blank" rel="noopener noreferrer">Github</a>
+                <a href='https://github.com/jimgoblinman/SkyCraft' target="_blank" rel="noopener noreferrer">Github</a>
               </div>
               <div>
               <Popup
