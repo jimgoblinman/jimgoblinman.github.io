@@ -53,7 +53,7 @@ function Header() {
           
         <div className={styles.griditem}></div>
 
-          <div className={styles.griditem}><h1><Link to="about" smooth={true}>About</Link></h1></div>
+          <div className={styles.griditem}><h1><Link to="about" smooth={true}>About me</Link></h1></div>
           <div className={styles.griditem}><h1><Link to="hit_me_up" smooth={true}>Hit me up</Link></h1></div>
           <div className={styles.griditem}><h1><a href="/certificates">Certificates</a></h1></div>
           <div className={styles.griditem}><h1><a href="/login">Login</a></h1></div>
@@ -70,6 +70,7 @@ function Header() {
           <div className={styles['icon-container']}>
             <img src="assets/placeholder.png" alt="Image description" className={styles.roundImage} />
           </div>
+          {/*
             <div className={styles['mobile-menu-item']}>
             <h1>
               <Link to='about-mobile' smooth={true} onClick={handleMobileMenuToggle}>
@@ -82,6 +83,21 @@ function Header() {
               <Link to='hit_me_up' smooth={true} onClick={handleMobileMenuToggle}>
                 Hit me up
               </Link>
+            </h1>
+          </div>
+          */}
+          <div className={styles['mobile-menu-item']}>
+            <h1>
+              <a href='/'>
+                Home
+              </a>
+            </h1>
+          </div>
+          <div className={styles['mobile-menu-item']}>
+            <h1>
+              <a href='/login' onClick={handleMobileMenuToggle}>
+                Login
+              </a>
             </h1>
           </div>
           <div className={styles['mobile-menu-item']}>

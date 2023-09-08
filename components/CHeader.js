@@ -52,7 +52,7 @@ function CHeader() {
           <div className={`${styles.griditem} ${styles.myName}`}><h2>James Vining</h2></div>
           
         <div className={styles.griditem}></div>
-          <div className={styles.griditem}><h1><a href='/#about'>About</a></h1></div>
+          <div className={styles.griditem}><h1><a href='/#about'>About me</a></h1></div>
           <div className={styles.griditem}><h1><a href="/#hit_me_up">Hit me up</a></h1></div>
           <div className={styles.griditem}><h1><a href="certificates">Certificates</a></h1></div>
           <div className={styles.griditem}><h1><a href="/login">Login</a></h1></div>
@@ -70,7 +70,7 @@ function CHeader() {
           <div className={styles['icon-container']}>
             <img src="assets/placeholder.png" alt="Image description" className={styles.roundImage} />
           </div>
-            <div className={styles['mobile-menu-item']}>
+            {/* <div className={styles['mobile-menu-item']}>
             <h1>
               <a href='/#about'>
                 About
@@ -84,9 +84,24 @@ function CHeader() {
               </a>
             </h1>
           </div>
+            */}
           <div className={styles['mobile-menu-item']}>
             <h1>
-              <a href='certificates'>
+              <a href='/'>
+                Home
+              </a>
+            </h1>
+          </div>
+          <div className={styles['mobile-menu-item']}>
+            <h1>
+              <a href='/login'>
+                Login
+              </a>
+            </h1>
+          </div>
+          <div className={styles['mobile-menu-item']}>
+            <h1>
+              <a href='/certificates'>
                 Certificates
               </a>
             </h1>

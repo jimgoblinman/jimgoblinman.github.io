@@ -4,7 +4,7 @@
   position: fixed;
   margin: 0; 
   display: grid;
-  grid-template-columns: 10% 20% 20% auto auto auto auto 5%;
+  grid-template-columns: 10% 15% 10% auto auto auto auto 2%;
   align-items: start;
   height: 8%;
   width: 100%;
@@ -21,8 +21,6 @@
   color: #a80000;
   font-size: 16px;
 }
-
-
 
 .header h2{
   color: white;
@@ -85,14 +83,13 @@
 .mobile img {
   width: 80%;  
   transition: transform 0.3s ease; /* Add a transition for smooth rotation */
-
 }
 
 .mobile-menu {
   position: fixed;
   height: 100%;
   width: 100%;
-  grid-template-rows: 10% 20% auto auto auto auto auto;
+  grid-template-rows: 10% 20% auto auto auto auto;
   display: none;
   background: #1f1f1f;
   z-index: 10;

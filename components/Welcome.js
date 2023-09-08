@@ -29,8 +29,7 @@ function Welcome() {
               During a rigorous school project week, my colleague and I collaborated on creating an Android Application.
             </div>
             <div>
-              Our app utilized the Hypixel API to retrieve Game Data, which we parsed
-              and presented as both general and player statistics.
+              
             </div>
             <div className={styles['footer-bar']}>
               <div>
