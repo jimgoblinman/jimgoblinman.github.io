@@ -72,7 +72,7 @@ function Header() {
           </div>
             <div className={styles['mobile-menu-item']}>
             <h1>
-              <Link to='about' smooth={true} onClick={handleMobileMenuToggle}>
+              <Link to='about-mobile' smooth={true} onClick={handleMobileMenuToggle}>
                 About
               </Link>
             </h1>
@@ -86,7 +86,7 @@ function Header() {
           </div>
           <div className={styles['mobile-menu-item']}>
             <h1>
-              <a to='certificates' onClick={handleMobileMenuToggle}>
+              <a href='/certificates' onClick={handleMobileMenuToggle}>
                 Certificates
               </a>
             </h1>
