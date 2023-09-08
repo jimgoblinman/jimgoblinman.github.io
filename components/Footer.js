@@ -78,7 +78,36 @@ function Footer() {
           <div className={styles.info}>
                   <h2>Info</h2>
                   <p>© All rights reserved</p>
-                  <p><a href='/impressum'>Impressum</a></p>
+                  <div className={styles.Impressum}>
+                  <Popup
+                    trigger={<div className={styles['c-item']}><a>Impressum</a></div>}
+                    modal
+                    contentStyle={{
+                      backgroundColor: '#1f1f1f', // Set the background color here
+                      padding: 0,
+                    }}
+                  >
+                    {close => (
+                      <div className={styles.popupContent}> {/* Use popupStyles for styling */}
+                        <h2>Impressum</h2>
+                        <p>
+                          This website is the personal portfolio of James Vining, an ongoing developer.
+                        </p>
+                        <h3>Website Owner</h3>
+                        <p>James Vining</p>
+                        <p>Burgunderstrasse 91</p>
+                        <p>Phone: +41 79 728 06 59</p>
+                        <p>Email: jim.vining@outlook.com</p>
+
+                        <h3>Copyright</h3>
+                        <p>
+                          © 2023 James Vining. All rights reserved. This website and its content are protected by copyright law. No part of this website may be reproduced without prior written permission.
+                        </p>
+                      </div>
+                    )}
+                  </Popup>
+
+                    </div>
           </div>
         </div>
     
