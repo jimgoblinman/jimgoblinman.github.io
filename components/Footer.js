@@ -15,8 +15,8 @@ function Footer() {
               <div className={styles['social-container']}> {/* For my socials, all in circular shape (linkdin/github/whatsapp) */}  
                 <a href='https://wa.me/41797280659' target="_blank" alt="Whatsapp"><img src="assets/whatsapp.png"></img></a>
                 <a href='https://github.com/jimgoblinman' target="_blank"><img src="assets/github.png" alt="Github"></img></a>
-                <a href='https://www.linkedin.com/in/jim-vin-421b42228/' target="_blank" alt="Linkedin"><img src="assets/linkedin.png"></img></a>
-              </div>          
+                <a href='https://www.linkedin.com/in/james-vining-421b42228/' target="_blank" alt="Linkedin"><img src="assets/linkedin.png"></img></a>
+              </div>
             </div>  
           <div className={styles['Footer-content']}>
               <div className={styles.contact}>
@@ -68,7 +68,7 @@ function Footer() {
           <div className={styles['social-container']}>
                 <a href='https://wa.me/41797280659' target="_blank" alt="Whatsapp"><img src="assets/whatsapp.png"></img></a>
                 <a href='https://github.com/jimgoblinman' target="_blank"><img src="assets/github.png" alt="Github"></img></a>
-                <a href='https://www.linkedin.com/in/jim-vin-421b42228/' target="_blank" alt="Linkedin"><img src="assets/linkedin.png"></img></a>
+                <a href='https://www.linkedin.com/in/james-vining-421b42228/' target="_blank" alt="Linkedin"><img src="assets/linkedin.png"></img></a>
           </div>
           <div className={styles.contact}>
               <h2>Contact</h2>
