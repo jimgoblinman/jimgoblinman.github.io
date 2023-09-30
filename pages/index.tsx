@@ -24,7 +24,7 @@ function App() {
           color: #731010;
         }
       `}</style>
-
+      
       <div className={styles['gridlayout-container']}>
         {/* First Column: Header and Welcome */}
         <Home></Home>
